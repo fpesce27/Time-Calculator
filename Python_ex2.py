@@ -41,7 +41,7 @@ def add_time(start, duration, day = None):
       start[1] = "AM"
 
     convertida = ":".join(str("{:.2f}".format(convertida)).split("."))
-    if day == None:
+    if day is None:
         nueva_hora = f"{convertida} {start[1]} {text}"
     else:
         day = day.title()

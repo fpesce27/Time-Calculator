@@ -21,7 +21,7 @@ def add_time(start, duration, day = None):
     while convertida > 24:
         convertida -= 24
         dias += 1
-    
+
     if dias == 1:
         text = " (next day)"
     elif dias > 1:
@@ -56,7 +56,7 @@ def add_time(start, duration, day = None):
             aux -= 7
         day = dias_semana[aux]
         nueva_hora = f"{convertida} {start[1]}, {day}{text}"
-                    
+
     return nueva_hora
 
 print(add_time("11:40 AM", "0:25"))
